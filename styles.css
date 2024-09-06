@@ -1,0 +1,107 @@
+/* Style général pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 0, 255);
+    margin: 20px;
+}
+
+/* Style pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Bordure et espacement des cellules */
+table, th, td {
+    border: 1px dotted rgb(253, 131, 0);
+    padding: 10px;
+}
+
+/* Style pour le premier tableau  */
+table:first-of-type {
+    background-color: rgb(253, 131, 0);
+}
+
+/* Style pour les titres */
+h2 {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style pour la section des études */
+h2:first-of-type {
+    background-color: rgb(255, 123, 0);
+}
+
+table:nth-of-type(2) td {
+    background-color: rgb(253, 131, 0);
+}
+
+table:nth-of-type(2) td:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 162, 0);
+}
+
+/* Compétences informatiques */
+h2:nth-of-type(2) {
+    background-color: rgb(253, 131, 0);
+    color: black;
+}
+
+table:nth-of-type(3) td {
+    background-color: rgb(253, 131, 0);
+}
+
+table:nth-of-type(3) td:nth-child(odd) {
+    background-color: rgb(253, 131, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Expériences professionnelles */
+h2:nth-of-type(3) {
+    background-color: rgb(255, 140, 0);
+}
+
+table:nth-of-type(4) td {
+    background-color: rgb(253, 131, 0);
+}
+
+table:nth-of-type(4) td:nth-child(odd) {
+    background-color: lightyellow;
+    color: rgb(253, 131, 0);
+}
+
+/* Style pour la section Divers */
+h2:nth-of-type(4) {
+    background-color: rgb(253, 131, 0);
+    color: black;
+}
+
+/* Style pour l'image */
+.photo {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin: 10px;
+
+}
+
+/* Style pour le lien */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listes dans la section Divers */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
