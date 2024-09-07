@@ -1,8 +1,10 @@
-/* Style général pour le corps */
-body {
+/* Style général pour le corps et toutes les sections */
+body, .info-container, .section {
     font-family: Arial, sans-serif;
-    background-color: #6c6c6c; /* Ajout d'un fond général de la page */
-    margin: 20px;
+    background-color: #494949;
+    color: #d3d3d3;
+    margin: 0;
+    padding: 20px;
 }
 
 /* Style pour les tableaux */
@@ -11,116 +13,77 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     text-align: left;
-    height: auto;
-    border: none; /* Les bordures des tableaux sont invisibles */
+
 }
 
-/* Style général pour les liens */
-a {
-    color: #007bff; /* Bleu spécifique pour les liens */
-    text-decoration: none;
+/* Alternance de couleurs pour les lignes du tableau */
+table tr:nth-child(odd) {
+    background-color: #494949;
+}
+table tr:nth-child(even) {
+    background-color: #7a7a7a;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: red; /* Couleur au survol */
-}
-
-/* Styles spécifiques pour les liens dans info-container */
-.info-container a {
-    color: #007bff;/* Couleur des liens dans la section des infos personnelles */
-}
-
-.info-container a:hover {
-    color: #ff4500; /* Couleur au survol des liens dans cette section */
-}
-
-
-
-
-/* Style pour les informations personnelles (fond gris plein) */
-.info-container {
-    padding: 10px;
-    background-color: #6c6c6c; /* Gris moyen plein */
-    border: none; /* Pas de bordures externes pour la section des infos personnelles */
-    color: #fff; /* Texte en blanc pour mieux contraster avec le fond gris */
-}
-
-/* correction */
-.info-container * {
-    background: none !important; /* Enlever les fonds hérités des éléments */
-    color: inherit; /* Hérite la couleur du texte de la section parente */
-}
-
-
-/* Espacement et alignement des cellules (pas de bordures visibles à l'intérieur des tableaux) */
+/* Style pour les cellules du tableau */
 td, th {
     padding: 10px;
-    border: none; /* Pas de bordures internes dans les tableaux */
+    border: none;
+    vertical-align: top;
 }
 
-
-
-/* Bordures pointillées externes uniquement pour les autres sections */
-.section {
-    border: 2px dotted #fd8300; /* Bordures externes en pointillés */
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px; /* Ajout de coins arrondis */
+/* Style pour les liens */
+a {
+    color: #0015ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
 /* Style pour la photo */
 .photo {
     width: 90px;
     height: auto;
-    float: right; /* Image déplacée à droite */
-    margin-left: 20px; /* Espace entre l'image et le texte */
+    float: right;
+    margin-left: 20px;
 }
 
 /* Style pour les titres */
 h2 {
-    background-color: #ff7f00;
-    color: white;
+    background-color: #808080;
+    color: #fff;
     padding: 10px;
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    border-radius: 5px; /* Pour un effet plus doux */
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Alternance de couleurs pour les tableaux */
-table tr:nth-child(odd) {
-    background-color: #f2f2f2;
+/* Style pour les sections */
+.section {
+    border: 2px dotted #d3d3d3;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-table tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-/* Style pour les liens */
-a {
-    color: #007bff; /* Bleu spécifique pour les liens */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: red;
-}
-
-/* Liste personnalisée pour la section Divers */
+/* Liste personnalisée */
 .custom-list {
     list-style-type: square;
     padding-left: 20px;
 }
 
-/* Retirer les espaces entre les cellules */
-table {
-    border-spacing: 0;
+/* Suppression des bordures internes du tableau */
+table, tr, td, th {
+    border: none;
 }
 
-/* Alignement du texte en haut */
-td {
-    vertical-align: top;
-}
+
+  
+      
+      
+
+
+
