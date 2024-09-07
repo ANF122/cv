@@ -1,7 +1,7 @@
 /* Style général pour le corps */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(247, 0, 255);
+    background-color: #6c6c6c; /* Ajout d'un fond général de la page */
     margin: 20px;
 }
 
@@ -11,97 +11,116 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     text-align: left;
-}
-
-/* Bordure et espacement des cellules */
-table, th, td {
-    border: 1px dotted rgb(253, 131, 0);
-    padding: 10px;
-}
-
-/* Style pour le premier tableau  */
-table:first-of-type {
-    background-color: rgb(253, 131, 0);
-}
-
-/* Style pour les titres */
-h2 {
-    background-color: orange;
-    color: black;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Style pour la section des études */
-h2:first-of-type {
-    background-color: rgb(255, 123, 0);
-}
-
-table:nth-of-type(2) td {
-    background-color: rgb(253, 131, 0);
-}
-
-table:nth-of-type(2) td:nth-child(odd) {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 162, 0);
-}
-
-/* Compétences informatiques */
-h2:nth-of-type(2) {
-    background-color: rgb(253, 131, 0);
-    color: black;
-}
-
-table:nth-of-type(3) td {
-    background-color: rgb(253, 131, 0);
-}
-
-table:nth-of-type(3) td:nth-child(odd) {
-    background-color: rgb(253, 131, 0);
-    color: rgb(255, 255, 255);
-}
-
-/* Expériences professionnelles */
-h2:nth-of-type(3) {
-    background-color: rgb(255, 140, 0);
-}
-
-table:nth-of-type(4) td {
-    background-color: rgb(253, 131, 0);
-}
-
-table:nth-of-type(4) td:nth-child(odd) {
-    background-color: lightyellow;
-    color: rgb(253, 131, 0);
-}
-
-/* Style pour la section Divers */
-h2:nth-of-type(4) {
-    background-color: rgb(253, 131, 0);
-    color: black;
-}
-
-/* Style pour l'image */
-.photo {
-    width: 150px;
     height: auto;
-    float: right;
-    margin: 10px;
-
+    border: none; /* Les bordures des tableaux sont invisibles */
 }
 
-/* Style pour le lien */
+/* Style général pour les liens */
 a {
-    color: blue;
+    color: #007bff; /* Bleu spécifique pour les liens */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: red; /* Couleur au survol */
 }
 
-/* Listes dans la section Divers */
-ul {
-    list-style-type: disc;
+/* Styles spécifiques pour les liens dans info-container */
+.info-container a {
+    color: #007bff;/* Couleur des liens dans la section des infos personnelles */
+}
+
+.info-container a:hover {
+    color: #ff4500; /* Couleur au survol des liens dans cette section */
+}
+
+
+
+
+/* Style pour les informations personnelles (fond gris plein) */
+.info-container {
+    padding: 10px;
+    background-color: #6c6c6c; /* Gris moyen plein */
+    border: none; /* Pas de bordures externes pour la section des infos personnelles */
+    color: #fff; /* Texte en blanc pour mieux contraster avec le fond gris */
+}
+
+/* correction */
+.info-container * {
+    background: none !important; /* Enlever les fonds hérités des éléments */
+    color: inherit; /* Hérite la couleur du texte de la section parente */
+}
+
+
+/* Espacement et alignement des cellules (pas de bordures visibles à l'intérieur des tableaux) */
+td, th {
+    padding: 10px;
+    border: none; /* Pas de bordures internes dans les tableaux */
+}
+
+
+
+/* Bordures pointillées externes uniquement pour les autres sections */
+.section {
+    border: 2px dotted #fd8300; /* Bordures externes en pointillés */
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Ajout de coins arrondis */
+}
+
+/* Style pour la photo */
+.photo {
+    width: 90px;
+    height: auto;
+    float: right; /* Image déplacée à droite */
+    margin-left: 20px; /* Espace entre l'image et le texte */
+}
+
+/* Style pour les titres */
+h2 {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 5px; /* Pour un effet plus doux */
+}
+
+/* Alternance de couleurs pour les tableaux */
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Style pour les liens */
+a {
+    color: #007bff; /* Bleu spécifique pour les liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Liste personnalisée pour la section Divers */
+.custom-list {
+    list-style-type: square;
     padding-left: 20px;
+}
+
+/* Retirer les espaces entre les cellules */
+table {
+    border-spacing: 0;
+}
+
+/* Alignement du texte en haut */
+td {
+    vertical-align: top;
 }
